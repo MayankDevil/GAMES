@@ -1,0 +1,15 @@
+{
+  "name": "GAMES",
+  "version": "1.0.0",
+  "description": "web games",
+  "main": "index.html",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords" : [
+    "games",
+    "webgames"
+  ],
+  "author": "Mayank",
+  "license": "ISC"
+}
