@@ -1,0 +1,76 @@
+*
+{
+	user-select: none;
+	margin:0;
+	padding:0;
+	color:var(--black);
+	text-decoration: none;
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji";
+	font-family:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	border:none;
+	outline: none;
+	border: none;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+#root
+{
+    text-align: center;
+}
+#keyboard
+{
+    display: inline-block;
+    padding: 1rem;
+    margin: 3rem auto;
+    box-shadow: 0 0 10px gray;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.row
+{
+    display: flex;
+    gap: 12px;
+    margin: 12px;
+    justify-content: space-between;
+}
+
+.btn 
+{
+  background: ghostwhite;
+  box-shadow: 0 0 2px 1px skyblue;
+  border: none;
+  border-radius: 16px;
+  color: skyblue;
+  cursor: pointer;
+  display: flex;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  justify-content: center;
+  min-width: 65px;
+  align-items: center;
+  padding: 18px 24px;
+  height: 65px;
+  box-sizing: border-box;
+}
+
+.invalid {
+    color: white;
+    background: tomato;
+}
+
+.active {
+    color: white;
+    background: skyblue;
+    animation: zoom 0.5s infinite alternate;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1);
+
+    } to {
+        transform: scale(0.9);
+    }
+}

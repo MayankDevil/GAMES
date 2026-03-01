@@ -1,0 +1,148 @@
+/*
+-   Project-1 ""
+-   Designed | Developed by Mayank
+-   Copyright by Mayank( https://github.com/MayankDevil/ )
+-   CSS : ./src/css/style.css
+*/
+
+
+@import "../assets/css/bootstrap-icons.min.css";
+@import "../assets/css/bootstrap-reboot.min.css";
+
+*
+{
+	user-select: none;
+	margin:0;
+	padding:0;
+	color:var(--c8);
+	text-decoration: none;
+	font-family:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji";
+	border:none;
+	outline: none;
+	border: none;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+
+/*
+	======================
+*/
+:root
+{
+    --c1:#cff4fc;
+    --c2:#9eeaf9;
+    --c3:#6edff6;
+    --c4:#3dd5f3;
+    --c5:#0dcaf0;
+    --c6:#0aa2c0;
+    --c7:#087990;
+    --c8:#032830;
+    --white:#f8f9fa;
+    --light:#e9ecef;
+    --gray:#adb5bd;
+    --dark:#343a40;
+    --black:#212529;
+}
+/*
+	main css ------------------------
+*/
+.isValid
+{
+	max-width: 500px;
+	margin: 1rem auto;
+	padding: 1rem;
+	color: #155724;
+	background-color: #d4edda;
+	border-color: #c3e6cb;
+	border-radius: 10px;
+}
+.isUnvalid
+{
+	max-width: 500px;
+	margin: 1rem auto;
+	padding: 1rem;
+	color: #721c24;
+	background-color: #f8d7da;
+	border-color: #f5c6cb;
+	border-radius: 10px;
+}
+
+main
+{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 10fr 1fr;
+}
+.container
+{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.row
+{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.display-1
+{
+    font-size: 5rem;
+    font-weight: 300;
+    color: var(--light) !important;
+}
+.lead
+{
+    font-size: 1.2rem;
+    color:var(--c8)
+}
+.btn
+{
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color:var(--black);
+    background: var(--c5);
+    box-shadow: 0 0 10px var(--gray);
+    border-radius: 5px;
+}
+.btn:hover
+{
+    text-decoration: none;
+    color:var(--black);
+    background: var(--c3);
+}
+
+#question_container {
+
+    background:ghostwhite;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--c5);
+}
+
+#question_field {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.form-check {
+    display: flex;
+    gap: 1rem;
+    margin: 0 1rem;
+}
+.form-check-label
+{
+    display: inline-block;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+#contorl_container
+{
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+}

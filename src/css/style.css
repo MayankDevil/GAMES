@@ -1,0 +1,163 @@
+/*
+-   Project-5 : "DesktopGame"
+-   https://github.com/MayankDevil
+-   Designed | Developed by Mayank
+-   CSS : ./css/style.css
+*/
+
+*
+{
+	user-select: none;
+	margin:0;
+	padding:0;
+	color:var(--black);
+	text-decoration: none;
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji";
+	font-family:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	border:none;
+	outline: none;
+	border: none;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+/*
+    ----------------------
+    | BootStrap Icon CSS |
+    ----------------------
+*/
+.bi
+{
+    margin: 0 !important;
+    padding: 0.5rem !important;
+    font-size: 1rem;
+    color:var(--black);
+}
+
+:root
+{
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background: var(--black);
+}
+::-webkit-scrollbar-thumb
+{
+	background: linear-gradient(to top, var(--secondary),var(--primary));
+}
+::selection
+{
+	color:var(--black);
+	background: var(--shade);
+}
+::placeholder
+{
+    color:var(--primary);
+}
+
+/*
+	main css ---------------------------
+*/
+
+body
+{
+    width: 100%;
+    background: rgba(5, 75, 100, 0.6) url("../img/bg.jpg") no-repeat fixed;
+    background-size: 100% 100%;
+    background-blend-mode: overlay;
+}
+
+
+
+h1 {
+    width: 30%;
+    line-height: 4rem;
+    letter-spacing: 1px;
+    color: var(--dark);
+    border-bottom: 5px solid var(--yellow);
+}
+p {
+    padding: 1rem 0;
+    line-height: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px;
+    margin:5px;
+    color: var(--light);
+    background: var(--blue);
+    border-radius: 10px;
+}
+.btn:hover {
+    font-weight: bold;
+    color: var(--dark);
+    background: var(--warning);
+}
+
+#section {
+    width: 1000px;
+    margin: 1rem auto;
+    padding: 1rem;
+    backdrop-filter:blur(5px);
+    background: #f8f9fabc;
+    border-radius: 1rem;
+    border: 1px solid var(--yellow);
+    box-shadow: 0 0 10px var(--info);
+}
+
+
+#footer
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 1rem;
+    margin-left: -1rem;
+    width: 60%;
+    text-align: center;
+    background: var(--orange);
+    transform: skew(20deg);
+}
+#footer h6
+{
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--dark);
+}
+#footer h6 a
+{
+    display: inline-block;
+    font-size: large;
+    font-weight: normal;
+    color:var(--light);
+}
+#footer h6 a:hover
+{
+    font-weight: bold;
+}
+
