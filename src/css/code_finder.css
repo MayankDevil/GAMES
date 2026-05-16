@@ -1,0 +1,136 @@
+
+*
+{
+	user-select: none;
+	margin:0;
+	padding:0;
+	color:var(--black);
+	text-decoration: none;
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji";
+	font-family:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	border:none;
+	outline: none;
+	border: none;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+/*
+    ----------------------
+    | BootStrap Icon CSS |
+    ----------------------
+*/
+.bi
+{
+    margin: 0 !important;
+    padding: 0.5rem !important;
+    font-size: 1rem;
+    color:var(--black);
+}
+
+:root
+{
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+.container
+{
+    min-width: 500px;
+    padding: 1rem;
+}
+
+.row
+{
+    margin:10vh auto;
+    max-width: 500px;
+}
+
+.col
+{
+    padding: 1rem;
+}
+
+#key_container
+{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.key
+{
+    display: inline-block;   
+    padding: 10px 20px;
+    font-size: xx-large;
+    color: var(--light);
+    font-weight: bolder;
+    background: var(--dark);
+    border-radius: 5px;
+}
+.key:hover
+{
+    box-shadow: 0 0  5px 2px var(--dark);
+}
+
+#start_btn
+{
+    grid-column: 1/4;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: large;
+    font-weight: bolder;
+    color: var(--light);
+    background: var(--blue);
+    border-radius: 10px;
+}
+.btn:hover 
+{
+    box-shadow: 0 0  5px 2px var(--dark);
+}
+
+#select_level
+{
+    padding: 10px;
+    grid-column: 4/6;
+    font-size: x-large;
+    color: var(--blue);
+    border: 5px solid var(--dark);
+    border-radius: 10px;
+}
+
+#input_field
+{
+    caret-color: var(--blue);
+    width: 100%;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    padding: 1rem;
+    color: var(--blue);
+    font-size: x-large;
+    border: 3px solid var(--blue);
+    border-color: var(--dark);
+    border-radius: 1rem;
+}
